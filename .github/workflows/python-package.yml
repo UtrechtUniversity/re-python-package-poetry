@@ -50,6 +50,7 @@ jobs:
 
     # This step can be removed.
     - name: Check if package can be imported
+      run: |
         python -c "import packagename"
 
 

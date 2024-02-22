@@ -13,12 +13,10 @@ Many other project templates exist, check for example this advanced [python temp
 This template uses:
 | Tool | Aim |
 | --- | --- |
-| setuptools | building |
-| flake8, pylint | code linting |
+| poetry | building |
+| ruff | code linting |
 | pytest | testing |
-| pydocstyle | checking docstrings |
 | mypy | type checking |
-| sphinx | documentation generation |
 
 If needed, most of these tools can be removed by simply removing the GitHub action that calls the tool, or by changing `pyproject.toml`
 

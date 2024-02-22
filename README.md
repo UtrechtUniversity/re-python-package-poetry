@@ -1,4 +1,4 @@
-# re-python-package
+# re-python-package-poetry
 
 This template repository is created by the [UU Research Engineering team](https://utrechtuniversity.github.io/research-engineering/) and is aimed to provide a simple project template for python package development.
 
@@ -22,10 +22,16 @@ This template uses:
 
 If needed, most of these tools can be removed by simply removing the GitHub action that calls the tool, or by changing `pyproject.toml`
 
-## How to use
+## How to use this template
+
+Click `Use this template` at the top of this page to create a new repository using this template
+
+
+
+
+## Modificating the template for your package
 
 ### Step 1: Create new repository from this template
-Click `Use this template` at the top of this page to create a new repository using this template
 
 ### Step 2: Change the name of your package in pyproject.toml
 - Change the name of the folder `packagename` to the name of your package
@@ -46,6 +52,7 @@ Click `Use this template` at the top of this page to create a new repository usi
 
 ### Step 6: Add a citation file
 - Create a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+
 
 ### Step 7: Publising on Pypi (optional/later)
 For publishing the package on Pypi you need to create [API tokens](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries).

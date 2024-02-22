@@ -1,4 +1,4 @@
-# re-python-package
+# re-python-package-poetry
 
 This template repository is created by the [UU Research Engineering team](https://utrechtuniversity.github.io/research-engineering/) and is aimed to provide a simple project template for python package development.
 
@@ -22,10 +22,22 @@ This template uses:
 
 If needed, most of these tools can be removed by simply removing the GitHub action that calls the tool, or by changing `pyproject.toml`
 
-## How to use
+## How to use this template
+
+Click `Use this template` at the top of this page to create a new repository using this template
+
+You will probably want to install/modify the package locally. For this, you will need Poetry. It is recommended for new users of Poetry to read the [documentation](https://python-poetry.org/docs/) which is excellent. This template uses a plugin for automated versioning which should be installed. A quick start:
+
+```bash
+pip install pipx
+pipx install poetry
+poetry self add "poetry-dynamic-versioning[plugin]"
+poetry install
+```
+
+## Modificating the template for your package
 
 ### Step 1: Create new repository from this template
-Click `Use this template` at the top of this page to create a new repository using this template
 
 ### Step 2: Change the name of your package in pyproject.toml
 - Change the name of the folder `packagename` to the name of your package
@@ -47,5 +59,24 @@ Click `Use this template` at the top of this page to create a new repository usi
 ### Step 6: Add a citation file
 - Create a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
-### Step 7: Publising on Pypi (optional/later)
+
+## Next Steps
+
+Now that you have succesfully created a package, there are some further steps to consider.
+
+### Tagging your commits
+
+When your library grows, you might want to give some commits (on main) a more human-readable tag, such as 1.2.0. To do this, do the following:
+
+```bash
+git checkout main && git pull
+git tag -a "v1.2.0" -m "Version 1.2.0"
+git push --tags  # upload the tags to GitHub
+```
+
+### Publishing on Pypi 
 For publishing the package on Pypi you need to create [API tokens](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries).
+
+If you put this token in GitHub secrets with the name `PYPI_API_TOKEN`, then you can automatically generate a new release on PyPi by creating a release on GitHub. You have to select the tag that was created in the previous step.
+
+Note however that your first release on PyPi has to be done manually and can't be done using this method.

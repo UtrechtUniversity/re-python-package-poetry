@@ -1,3 +1,6 @@
+# Usually we don't want to keep the lock file for libraries
+poetry.lock
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

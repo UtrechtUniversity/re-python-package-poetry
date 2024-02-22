@@ -26,6 +26,14 @@ If needed, most of these tools can be removed by simply removing the GitHub acti
 
 Click `Use this template` at the top of this page to create a new repository using this template
 
+You will probably want to install/modify the package locally. For this, you will need Poetry. It is recommended for new users of Poetry to read the [documentation](https://python-poetry.org/docs/) which is excellent. This template uses a plugin for automated versioning which should be installed. A quick start:
+
+```bash
+pip install pipx
+pipx install poetry
+poetry self add "poetry-dynamic-versioning[plugin]"
+poetry install
+```
 
 
 
@@ -53,6 +61,5 @@ Click `Use this template` at the top of this page to create a new repository usi
 ### Step 6: Add a citation file
 - Create a citation file for your repository using [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/)
 
-
-### Step 7: Publising on Pypi (optional/later)
+### Step 8: Publising on Pypi (optional/later)
 For publishing the package on Pypi you need to create [API tokens](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries).

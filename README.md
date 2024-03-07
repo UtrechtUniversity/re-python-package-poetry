@@ -1,6 +1,6 @@
-# re-python-package-poetry
+# Python packaging template with Poetry
 
-This template repository is created by the [UU Research Engineering team](https://utrechtuniversity.github.io/research-engineering/) and is aimed to provide a simple project template for python package development.
+This template repository is created by the [UU Research Engineering team](https://utrechtuniversity.github.io/research-engineering/) and is aimed to provide a simple project template for python package development. This template uses [Poetry](https://python-poetry.org/) as the packaging toolkit, there is another [template](https://github.com/UtrechtUniversity/re-python-package-setuptools) that is very similar that uses [Setuptools](https://setuptools.pypa.io/en/latest/userguide/quickstart.html).
 
 The template includes:
 - Project directory structure
